@@ -18,7 +18,7 @@ form.addEventListener('submit', function (e) {
     lector.onload = function (e) {
         const imagenBase64 = e.target.result;
 
-        empleados.push({ nombre, dni, correo, direccion, ocupacion, nivel, foto: imagenBase64 });
+        empleados.push({ nombre, dni, correo, direccion, nivel, foto: imagenBase64 });
         actualizarTabla();
         form.reset();
         nombreFotoSpan.textContent = 'Ningún archivo seleccionado';
